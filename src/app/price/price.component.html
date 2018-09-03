@@ -1,0 +1,16 @@
+<div>
+   <mat-card>
+    <mat-card-header>
+        <mat-card-title>Bitstamp BTC price:</mat-card-title>
+    </mat-card-header>
+       <mat-card-content>
+           <mat-list>
+               <mat-list-item>High: <span>${{btcPrice.high}}</span></mat-list-item>
+               <mat-list-item>Last: <span>${{btcPrice.last}}</span> </mat-list-item>
+               <mat-list-item>Bid: <span>${{btcPrice.bid}}</span></mat-list-item>
+               <mat-list-item>Ask: <span>{{ btcPrice.ask }}</span></mat-list-item>
+               <mat-list-item>Time: <span>{{ btcPrice.timestamp * 1000 | date:'medium' }}</span></mat-list-item>
+           </mat-list>
+       </mat-card-content>
+   </mat-card>
+</div>
